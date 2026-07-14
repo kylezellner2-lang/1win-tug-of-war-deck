@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1win — Tug of War in the Sky</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#0A0B0E',
+        panel: '#101218',
+        winblue: '#1479FF',
+        winblue2: '#4DA3FF',
+        mute: '#8A93A6',
+      },
+      fontFamily: {
+        head: ['Sora', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
+      },
+    },
+  },
+};
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background: #0A0B0E; }
+  section[id] { scroll-margin-top: 72px; }
+  ::selection { background: #1479FF; color: #fff; }
+
+  /* Section labels */
+  .eyebrow { letter-spacing: .28em; }
+
+  /* Image slots — show label until a real image loads on top */
+  .slot { position: relative; overflow: hidden; background:
+      repeating-linear-gradient(45deg,#101218,#101218 12px,#0d0f14 12px,#0d0f14 24px);
+      border: 1px solid rgba(255,255,255,.08); }
+  .slot::after { content: attr(data-label); position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center; text-align:center;
+      color: #5c6472; font-family: 'Sora',sans-serif; font-weight:700; font-size: .8rem;
+      letter-spacing: .18em; padding: 1rem; pointer-events: none; }
+  .slot img { position: relative; width: 100%; height: 100%; object-fit: cover; display:block; }
+
+  /* Scroll reveal */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* Nav active */
+  .navlink.active { color: #fff; }
+  .navlink.active::after { width: 100%; }
+  .navlink { position: relative; }
+  .navlink::after { content:''; position:absolute; left:0; bottom:-4px; height:1px; width:0; background:#1479FF; transition:width .3s ease; }
+
+  @media print { .reveal { opacity:1 !important; transform:none !important; } .no-print{display:none;} }
+</style>
+</head>
+<body class="font-body text-white antialiased">
+
+<!-- NAV -->
+<header class="no-print fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-ink/70 border-b border-white/5">
+  <div class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
+    <a href="#hero" class="font-head font-extrabold tracking-tight text-sm">
+      <span class="text-winblue">1win</span> <span class="text-mute font-semibold">× Tug of War in the Sky</span>
+    </a>
+    <nav class="hidden md:flex gap-8 text-sm text-mute font-medium">
+      <a href="#concept" class="navlink hover:text-white transition">Concept</a>
+      <a href="#proof" class="navlink hover:text-white transition">Proof</a>
+      <a href="#reach" class="navlink hover:text-white transition">Reach</a>
+      <a href="#team" class="navlink hover:text-white transition">Team</a>
+      <a href="#ask" class="navlink hover:text-white transition">The Ask</a>
+    </nav>
+  </div>
+</header>
+
+<!-- 1 · HERO -->
+<section id="hero" class="relative min-h-screen flex items-center">
+  <div class="slot absolute inset-0" data-label="HERO IMAGE">
+    <img src="photos/concept.png" alt="" onerror="this.remove()">
+  </div>
+  <div class="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/40 to-ink"></div>
+  <div class="relative max-w-6xl mx-auto px-6 w-full">
+    <p class="eyebrow uppercase text-winblue2 text-xs font-semibold mb-5">1win presents</p>
+    <h1 class="font-head font-extrabold leading-[0.92] text-6xl sm:text-7xl md:text-8xl tracking-tight">
+      THE ULTIMATE<br>BET.
+    </h1>
+    <p class="mt-6 text-xl md:text-2xl text-white/90 font-semibold">Tug of War in the Sky.</p>
+    <p class="mt-1 text-lg md:text-xl text-mute">One team stays. One team falls.</p>
+    <p class="mt-8 text-sm text-mute max-w-md">A branded aerial stunt built for extreme — powered by 1win and a crew of creators with 2M+ combined reach.</p>
+  </div>
+  <div class="no-print absolute bottom-8 left-1/2 -translate-x-1/2 text-mute text-xs eyebrow uppercase animate-pulse">Scroll ↓</div>
+</section>
+
+<!-- 2 · THE CONCEPT -->
+<section id="concept" class="py-28 md:py-36">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">01 — The Concept</p>
+    <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight max-w-3xl reveal">A tug of war, 10,000 feet up.</h2>
+    <div class="grid md:grid-cols-2 gap-12 items-center mt-14">
+      <div class="reveal">
+        <p class="text-lg text-white/85 leading-relaxed">Two teams. Two steel platforms suspended beneath a single 1win hot air balloon. One rope stretched across an open drop zone.</p>
+        <p class="text-lg text-white/85 leading-relaxed mt-5">The team that loses their footing doesn't just lose the match — they fall out of the sky. Parachutes deploy. Confetti erupts. It's the most literal high-stakes game ever filmed.</p>
+        <p class="text-sm text-mute mt-6 border-l-2 border-winblue pl-4">Built for extreme. Powered by 1win.</p>
+      </div>
+      <div class="slot aspect-[4/5] rounded-xl reveal" data-label="CONCEPT — THE FULL RIG">
+        <img src="photos/concept.png" alt="Tug of War in the Sky concept" onerror="this.remove()">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · PROOF OF CONCEPT -->
+<section id="proof" class="py-28 md:py-36 border-y border-white/5 bg-panel/40">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">02 — Proof of Concept</p>
+    <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight max-w-3xl reveal">We already live in the sky.</h2>
+    <p class="mt-6 text-lg text-mute max-w-2xl reveal">This stunt isn't a leap for us — it's the everyday. The crew's entire body of work is high-altitude, high-risk content, and two of the four are licensed skydivers. Certified rigging and a rehearsed exit make the fall the most controlled part of the shoot.</p>
+
+    <div class="grid md:grid-cols-3 gap-6 mt-14">
+      <figure class="reveal">
+        <div class="slot aspect-[4/3] rounded-xl" data-label="PROOF — PAST WORK 1"><img src="photos/proof-1.png" alt="" onerror="this.remove()"></div>
+        <figcaption class="mt-3 text-sm"><span class="text-white font-semibold">Callie.</span> <span class="text-mute">Helicopter &amp; aerial stunt content.</span></figcaption>
+      </figure>
+      <figure class="reveal">
+        <div class="slot aspect-[4/3] rounded-xl" data-label="PROOF — PAST WORK 2"><img src="photos/proof-2.png" alt="" onerror="this.remove()"></div>
+        <figcaption class="mt-3 text-sm"><span class="text-white font-semibold">Noah &amp; Kyle.</span> <span class="text-mute">Licensed skydivers, filming from freefall.</span></figcaption>
+      </figure>
+      <figure class="reveal">
+        <div class="slot aspect-[4/3] rounded-xl" data-label="PROOF — PAST WORK 3"><img src="photos/proof-3.png" alt="" onerror="this.remove()"></div>
+        <figcaption class="mt-3 text-sm"><span class="text-white font-semibold">The crew.</span> <span class="text-mute">A track record of extreme content that performs.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · THE MECHANIC -->
+<section id="mechanic" class="py-28 md:py-36">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">03 — How It Works</p>
+    <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight reveal">Engineered for real. Built to go viral.</h2>
+
+    <div class="grid md:grid-cols-3 gap-6 mt-16">
+      <div class="reveal">
+        <div class="text-6xl font-head font-extrabold text-white/10">01</div>
+        <div class="font-head font-bold text-xl mt-2">The Rig</div>
+        <p class="text-mute mt-3">A single 1win balloon suspends two locked steel platforms on industrial cables. C-ring connectors hold them rigid for a fair pull.</p>
+      </div>
+      <div class="reveal">
+        <div class="text-6xl font-head font-extrabold text-white/10">02</div>
+        <div class="font-head font-bold text-xl mt-2">The Tug of War</div>
+        <p class="text-mute mt-3">Two teams of two. One rope. An open drop zone in the middle. The first team pulled off the edge loses.</p>
+      </div>
+      <div class="reveal">
+        <div class="text-6xl font-head font-extrabold text-winblue/30">03</div>
+        <div class="font-head font-bold text-xl mt-2">The Fall</div>
+        <p class="text-mute mt-3">The losers don't crash — they skydive. Chutes deploy, blue confetti erupts. Losing has never looked this good.</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 mt-14">
+      <div class="slot aspect-video rounded-xl reveal" data-label="FILMER — THE FIGHT ON THE PLATFORM">
+        <img src="photos/filmer.png" alt="" onerror="this.remove()">
+      </div>
+      <div class="slot aspect-video rounded-xl reveal" data-label="POV — THE FALL">
+        <img src="photos/pov.png" alt="" onerror="this.remove()">
+      </div>
+    </div>
+
+    <p class="mt-8 text-sm text-mute reveal border border-white/10 rounded-lg px-5 py-4 inline-block">
+      <span class="text-winblue font-semibold">Safety &amp; stunt engineered.</span>
+      The fall is a controlled, rehearsed skydive exit with certified rigging — executed by a crew that already lives in the air.
+    </p>
+  </div>
+</section>
+
+<!-- 5 · THE REACH -->
+<section id="reach" class="py-28 md:py-36 border-y border-white/5 bg-panel/40">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">04 — The Reach</p>
+    <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight max-w-3xl reveal">One stunt. Five feeds. Millions of eyes.</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+      <div class="reveal">
+        <div class="font-head font-extrabold text-5xl md:text-6xl text-winblue"><span class="count" data-to="2">0</span>M+</div>
+        <div class="text-mute text-sm mt-2 uppercase eyebrow">Combined audience</div>
+      </div>
+      <div class="reveal">
+        <div class="font-head font-extrabold text-5xl md:text-6xl"><span class="count" data-to="4">0</span></div>
+        <div class="text-mute text-sm mt-2 uppercase eyebrow">Creators</div>
+      </div>
+      <div class="reveal">
+        <div class="font-head font-extrabold text-5xl md:text-6xl"><span class="count" data-to="5">0</span></div>
+        <div class="text-mute text-sm mt-2 uppercase eyebrow">Feeds at once</div>
+      </div>
+      <div class="reveal">
+        <div class="font-head font-extrabold text-5xl md:text-6xl"><span class="count" data-to="10">0</span>M+</div>
+        <div class="text-mute text-sm mt-2 uppercase eyebrow">Projected views</div>
+      </div>
+    </div>
+    <p class="mt-12 text-lg text-white/80 max-w-2xl reveal">Roughly <span class="text-white font-semibold">1.1M on Instagram</span> across the four of us, plus Noah's <span class="text-white font-semibold">984K on Facebook</span> — one production, distributed natively across every creator's audience the moment it drops, plus the organic and paid tail a stunt of this scale generates for weeks after.</p>
+  </div>
+</section>
+
+<!-- 6 · THE TEAM -->
+<section id="team" class="py-28 md:py-36">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">05 — The Team</p>
+    <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight reveal">Four creators. Two teams. One rope.</h2>
+    <p class="mt-5 text-mute max-w-2xl reveal">Noah is already a signed 1win creator — this is being brought to you from inside the family.</p>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-14">
+      <!-- CREATOR 1 -->
+      <div class="reveal">
+        <div class="slot aspect-[3/4] rounded-xl" data-label="CALLIE"><img src="photos/callie.png" alt="" onerror="this.remove()"></div>
+        <div class="mt-4">
+          <div class="font-head font-bold">Callie Rounds</div>
+          <div class="text-mute text-sm">@callie.rounds · 408K</div>
+          <div class="text-winblue text-xs mt-1 eyebrow uppercase">Team A · Aerial stunts</div>
+        </div>
+      </div>
+      <!-- CREATOR 2 -->
+      <div class="reveal">
+        <div class="slot aspect-[3/4] rounded-xl" data-label="NOAH"><img src="photos/noah.png" alt="" onerror="this.remove()"></div>
+        <div class="mt-4">
+          <div class="font-head font-bold">Noah Lipsitz</div>
+          <div class="text-mute text-sm">@noahlipsitz · 220K IG · 984K FB</div>
+          <div class="text-winblue text-xs mt-1 eyebrow uppercase">Team A · Skydiver · 1win athlete</div>
+        </div>
+      </div>
+      <!-- CREATOR 3 -->
+      <div class="reveal">
+        <div class="slot aspect-[3/4] rounded-xl" data-label="GABRIELLE"><img src="photos/gabrielle.png" alt="" onerror="this.remove()"></div>
+        <div class="mt-4">
+          <div class="font-head font-bold">Gabrielli Diniz</div>
+          <div class="text-mute text-sm">@gabriellidinizz · 372K</div>
+          <div class="text-winblue text-xs mt-1 eyebrow uppercase">Team B · Extreme creator</div>
+        </div>
+      </div>
+      <!-- CREATOR 4 -->
+      <div class="reveal">
+        <div class="slot aspect-[3/4] rounded-xl" data-label="KYLE"><img src="photos/kyle.png" alt="" onerror="this.remove()"></div>
+        <div class="mt-4">
+          <div class="font-head font-bold">Kyle Zellner</div>
+          <div class="text-mute text-sm">@kyle.zellner · 91K</div>
+          <div class="text-winblue text-xs mt-1 eyebrow uppercase">Team B · Extreme sports</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · THE SHOTS -->
+<section id="shots" class="py-28 md:py-36 border-y border-white/5 bg-panel/40">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">06 — The Content</p>
+    <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight reveal">Every angle. Every platform.</h2>
+    <div class="grid md:grid-cols-2 gap-6 mt-14">
+      <figure class="reveal">
+        <div class="slot aspect-video rounded-xl" data-label="POV — HELMET CAM"><img src="photos/pov.png" alt="" onerror="this.remove()"></div>
+        <figcaption class="mt-3 text-sm"><span class="text-white font-semibold">POV.</span> <span class="text-mute">Helmet-cam free fall — the clip that goes viral.</span></figcaption>
+      </figure>
+      <figure class="reveal">
+        <div class="slot aspect-video rounded-xl" data-label="DRONE — THE SCALE"><img src="photos/drone.png" alt="" onerror="this.remove()"></div>
+        <figcaption class="mt-3 text-sm"><span class="text-white font-semibold">Drone.</span> <span class="text-mute">The full rig against the sky — the establishing shot.</span></figcaption>
+      </figure>
+      <figure class="reveal">
+        <div class="slot aspect-video rounded-xl" data-label="FILMER — ON PLATFORM"><img src="photos/filmer.png" alt="" onerror="this.remove()"></div>
+        <figcaption class="mt-3 text-sm"><span class="text-white font-semibold">Filmer.</span> <span class="text-mute">On-platform, in the action — the tension.</span></figcaption>
+      </figure>
+      <figure class="reveal">
+        <div class="slot aspect-video rounded-xl" data-label="CINEMATIC — BRAND FILM"><img src="photos/cinematic.png" alt="" onerror="this.remove()"></div>
+        <figcaption class="mt-3 text-sm"><span class="text-white font-semibold">Cinematic.</span> <span class="text-mute">Branded hero film for 1win's own channels.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · THE ASK -->
+<section id="ask" class="py-28 md:py-40">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">07 — The Ask</p>
+    <h2 class="font-head font-extrabold text-4xl md:text-7xl tracking-tight reveal">Two ways to say yes.</h2>
+    <div class="grid md:grid-cols-2 gap-6 mt-16">
+      <div class="border border-winblue/40 rounded-2xl p-8 bg-winblue/5 reveal">
+        <div class="text-winblue font-head font-bold eyebrow uppercase text-sm">The Flagship</div>
+        <p class="mt-4 text-white/85 text-lg">Fund the full stunt as a 1win campaign — one unforgettable hero film plus a month of native creator content across a 2M+ combined audience.</p>
+      </div>
+      <div class="border border-white/10 rounded-2xl p-8 reveal">
+        <div class="text-mute font-head font-bold eyebrow uppercase text-sm">The Entry Point</div>
+        <p class="mt-4 text-white/85 text-lg">Start smaller — a branded content series with the crew that builds anticipation toward the main event.</p>
+      </div>
+    </div>
+
+    <div class="mt-20 border-t border-white/10 pt-10 reveal">
+      <p class="font-head font-extrabold text-2xl">Let's build it.</p>
+      <p class="text-mute mt-2">Kyle Zellner · <a href="mailto:kylezellnerkz@gmail.com" class="text-winblue hover:underline">kylezellnerkz@gmail.com</a></p>
+      <p class="text-mute mt-10 text-sm eyebrow uppercase">Built for extreme. Powered by <span class="text-winblue">1win</span>.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  const revealAll = () => document.querySelectorAll('.reveal').forEach(el => {
+    const r = el.getBoundingClientRect();
+    if (r.top < window.innerHeight && r.bottom > 0) el.classList.add('in'); else io.observe(el);
+  });
+  revealAll();
+  window.addEventListener('load', revealAll);
+
+  // Count-up
+  const countIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target, to = +el.dataset.to; let start = null;
+      const dec = to % 1 !== 0;
+      const dur = 1400;
+      const step = (t) => {
+        if (!start) start = t;
+        const p = Math.min((t - start) / dur, 1);
+        el.textContent = dec ? (p * to).toFixed(1) : Math.floor(p * to).toString();
+        if (p < 1) requestAnimationFrame(step); else el.textContent = dec ? to.toFixed(1) : to;
+      };
+      requestAnimationFrame(step);
+      countIO.unobserve(el);
+    });
+  }, { threshold: 0.6 });
+  document.querySelectorAll('.count').forEach(el => countIO.observe(el));
+
+  // Active nav highlight
+  const links = [...document.querySelectorAll('.navlink')];
+  const map = links.map(l => ({ l, sec: document.querySelector(l.getAttribute('href')) })).filter(x => x.sec);
+  const navIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(l => l.classList.remove('active'));
+        const m = map.find(x => x.sec === e.target);
+        if (m) m.l.classList.add('active');
+      }
+    });
+  }, { threshold: 0.5 });
+  map.forEach(x => navIO.observe(x.sec));
+</script>
+</body>
+</html>
