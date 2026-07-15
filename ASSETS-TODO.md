@@ -4,11 +4,9 @@ Running list of images/assets still needed or needing fixes. Drop finished files
 with the filename shown and Claude swaps them into the deck automatically.
 
 ## FIXES
-- [ ] **Clean hero/concept image** — the current `concept.png` (the IMG_1277 render) has annotation
-      text on it ("OPEN DROP ZONE", "FALL = GAME OVER", "COMPETITION PLATFORMS", "BRANDED HOT AIR
-      BALLOON", the structure/top-view/side-view diagrams, etc.). **All that text/labels must be
-      removed** so it's a clean, distraction-free image. → Regenerate a clean version in ChatGPT,
-      save as `photos/concept.png` (used for both the HERO and the CONCEPT section).
+- [x] **Clean hero/concept image** — DONE. New clean render (IMG_1300) with the 1win balloon, both
+      platforms, tug-of-war, no text labels. Cropped + installed as `photos/concept.png` (hero + concept
+      section). Optional future tweak: it's 3v3; could regenerate as 2v2 to match the 4-creator roster.
 
 ## STILL NEEDED (placeholder slots)
 - [ ] `photos/proof-1.png` — PROOF: Callie's helicopter/aerial stunt work (past-work still)
