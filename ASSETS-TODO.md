@@ -9,9 +9,6 @@ with the filename shown and Claude swaps them into the deck automatically.
       section). Optional future tweak: it's 3v3; could regenerate as 2v2 to match the 4-creator roster.
 
 ## STILL NEEDED (placeholder slots)
-- [ ] `photos/proof-1.png` — PROOF: Callie's helicopter/aerial stunt work (past-work still)
-- [ ] `photos/proof-2.png` — PROOF: Noah/Kyle skydiving / freefall filming (past-work still)
-- [ ] `photos/proof-3.png` — PROOF: crew extreme content that performed (past-work still)
 - [ ] `photos/drone.png` — DRONE shot: full rig against the sky, establishing/scale shot
 - [ ] `photos/filmer.png` — FILMER on platform: two teams straining, in the action
 - [ ] `photos/cinematic.png` — CINEMATIC branded hero frame for 1win channels
@@ -22,6 +19,11 @@ with the filename shown and Claude swaps them into the deck automatically.
 
 ## ALREADY IN
 - [x] `photos/pov.png` — POV fall shot (helmet-cam freefall) — good, in use
+- [x] `videos/` — REAL proof footage pulled from Callie's eBay deck (Ford, Stake, boxing ring,
+      Aviator). Now powers the new "Recent Projects" proof section, replacing the proof-1/2/3
+      placeholders. Same crew, real rigs, not renders.
+- [x] Stake World Cup numbers (200M+ / 20M+ / 232K+) — new "By the Numbers" section, a defensible
+      real stat for the format (see the projected-views note below).
 
 ## COPY / DATA TO CONFIRM
 - [ ] Projected views stat currently `10M+` — pressure-test / replace with a defensible number
