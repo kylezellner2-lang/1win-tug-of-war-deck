@@ -43,7 +43,8 @@ tailwind.config = {
       display: flex; align-items: center; justify-content: center; text-align:center;
       color: #5c6472; font-family: 'Sora',sans-serif; font-weight:700; font-size: .8rem;
       letter-spacing: .18em; padding: 1rem; pointer-events: none; }
-  .slot img { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: cover; display:block; }
+  .slot img { position: relative; width: 100%; height: 100%; object-fit: cover; display:block; }
+  .slot:has(img)::after { display: none; }
 
   .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s ease; }
   .reveal.in { opacity: 1; transform: none; }
@@ -91,8 +92,9 @@ tailwind.config = {
 </section>
 
 <!-- 2 · PROOF OF CONCEPT (+ Stake numbers) -->
-<section id="proof" class="py-28 md:py-36 border-y border-white/5 bg-panel/40">
-  <div class="max-w-6xl mx-auto px-6">
+<section id="proof" class="relative overflow-hidden py-28 md:py-36 border-y border-white/5 bg-panel/40">
+  <div aria-hidden="true" class="pointer-events-none absolute -right-16 top-1/2 -translate-y-1/2 select-none"><span class="font-head font-extrabold leading-none tracking-tighter text-white/[0.03]" style="font-size:24vw">1win</span></div>
+  <div class="relative z-10 max-w-6xl mx-auto px-6">
     <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">01 — Proof of Concept</p>
     <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight max-w-3xl reveal">A proven method for guaranteed results.</h2>
     <p class="mt-6 text-lg text-mute max-w-2xl reveal">These are real aerial-suspension builds — rigged, flown, and filmed, not rendered. A crew and a format with a proven track record on projects exactly like these.</p>
@@ -151,8 +153,9 @@ tailwind.config = {
 </section>
 
 <!-- 3 · THE CONCEPTS -->
-<section id="concepts" class="py-28 md:py-36">
-  <div class="max-w-6xl mx-auto px-6">
+<section id="concepts" class="relative overflow-hidden py-28 md:py-36">
+  <div aria-hidden="true" class="pointer-events-none absolute -left-20 top-1/2 -translate-y-1/2 select-none"><span class="font-head font-extrabold leading-none tracking-tighter text-white/[0.03]" style="font-size:24vw">1win</span></div>
+  <div class="relative z-10 max-w-6xl mx-auto px-6">
     <p class="eyebrow uppercase text-winblue text-sm font-bold reveal">02 — The Concepts</p>
 
     <div class="grid md:grid-cols-3 gap-6 mt-14">
@@ -201,8 +204,9 @@ tailwind.config = {
 </section>
 
 <!-- 4 · BRANDING -->
-<section id="branding" class="py-28 md:py-36 border-y border-white/5 bg-panel/40">
-  <div class="max-w-6xl mx-auto px-6">
+<section id="branding" class="relative overflow-hidden py-28 md:py-36 border-y border-white/5 bg-panel/40">
+  <div aria-hidden="true" class="pointer-events-none absolute -right-16 top-1/2 -translate-y-1/2 select-none"><span class="font-head font-extrabold leading-none tracking-tighter text-white/[0.03]" style="font-size:24vw">1win</span></div>
+  <div class="relative z-10 max-w-6xl mx-auto px-6">
     <p class="eyebrow uppercase text-winblue text-sm font-bold reveal">03 — Branding</p>
 
     <div class="grid md:grid-cols-3 gap-6 mt-14">
@@ -218,8 +222,8 @@ tailwind.config = {
         <ul class="mt-5 space-y-1.5 text-sm text-mute">
           <li>Flag above the bars</li>
           <li>Branded balloon</li>
-          <li>Logo down the rig sides</li>
-          <li>Creators in 1win merch</li>
+          <li>Creator branded on their t-shirt</li>
+          <li>1win cuffs for the POV shot</li>
         </ul>
       </div>
       <!-- Quarter Pipe -->
@@ -259,8 +263,9 @@ tailwind.config = {
 </section>
 
 <!-- 5 · DELIVERABLES -->
-<section id="deliverables" class="py-28 md:py-36">
-  <div class="max-w-6xl mx-auto px-6">
+<section id="deliverables" class="relative overflow-hidden py-28 md:py-36">
+  <div aria-hidden="true" class="pointer-events-none absolute -left-20 top-1/2 -translate-y-1/2 select-none"><span class="font-head font-extrabold leading-none tracking-tighter text-white/[0.03]" style="font-size:24vw">1win</span></div>
+  <div class="relative z-10 max-w-6xl mx-auto px-6">
     <p class="eyebrow uppercase text-winblue text-sm font-bold reveal">04 — Deliverables</p>
 
     <div class="grid md:grid-cols-3 gap-6 mt-14">
@@ -314,8 +319,9 @@ tailwind.config = {
 </section>
 
 <!-- 6 · THE CREATORS -->
-<section id="creators" class="py-28 md:py-36 border-y border-white/5 bg-panel/40">
-  <div class="max-w-6xl mx-auto px-6">
+<section id="creators" class="relative overflow-hidden py-28 md:py-36 border-y border-white/5 bg-panel/40">
+  <div aria-hidden="true" class="pointer-events-none absolute -right-16 top-1/2 -translate-y-1/2 select-none"><span class="font-head font-extrabold leading-none tracking-tighter text-white/[0.03]" style="font-size:24vw">1win</span></div>
+  <div class="relative z-10 max-w-6xl mx-auto px-6">
     <p class="eyebrow uppercase text-winblue text-sm font-bold reveal">05 — The Creators</p>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
       <div class="reveal">
