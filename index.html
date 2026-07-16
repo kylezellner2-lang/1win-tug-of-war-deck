@@ -76,18 +76,18 @@ tailwind.config = {
 </header>
 
 <!-- 1 · HERO -->
-<section id="hero" class="relative min-h-screen flex items-center">
-  <div class="slot absolute inset-0" data-label="HERO IMAGE">
-    <img src="photos/hero.png" alt="" class="!object-[center_top]" onerror="this.remove()">
+<section id="hero" class="relative">
+  <img src="photos/hero.png" alt="" class="w-full block" onerror="this.style.display='none'">
+  <div class="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/25 to-transparent"></div>
+  <div class="absolute inset-0 flex items-center">
+    <div class="max-w-6xl mx-auto px-6 w-full hero-copy">
+      <p class="eyebrow uppercase text-winblue2 text-xs font-semibold mb-4">A proposal to bring</p>
+      <h1 class="font-head font-extrabold leading-[0.92] text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight">
+        1WIN TO<br>THE SKIES.
+      </h1>
+    </div>
   </div>
-  <div class="absolute inset-0 bg-gradient-to-r from-ink/65 via-transparent to-transparent"></div>
-  <div class="relative max-w-6xl mx-auto px-6 w-full hero-copy">
-    <p class="eyebrow uppercase text-winblue2 text-xs font-semibold mb-5">A proposal to bring</p>
-    <h1 class="font-head font-extrabold leading-[0.92] text-6xl sm:text-7xl md:text-8xl tracking-tight">
-      1WIN TO<br>THE SKIES.
-    </h1>
-  </div>
-  <div class="no-print absolute bottom-8 left-1/2 -translate-x-1/2 text-mute text-xs eyebrow uppercase animate-pulse">Scroll ↓</div>
+  <div class="no-print absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 text-mute text-xs eyebrow uppercase animate-pulse">Scroll ↓</div>
 </section>
 
 <!-- 2 · PROOF OF CONCEPT (+ Stake numbers) -->
