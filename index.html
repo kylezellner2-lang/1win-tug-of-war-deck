@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>1win — Tug of War in the Sky</title>
+<title>1win — Built for the Sky</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,13 +33,9 @@ tailwind.config = {
   section[id] { scroll-margin-top: 72px; }
   ::selection { background: #1479FF; color: #fff; }
 
-  /* Section labels */
   .eyebrow { letter-spacing: .28em; }
-
-  /* Hero text stays legible over a bright image without darkening it */
   .hero-copy h1, .hero-copy p { text-shadow: 0 2px 28px rgba(0,0,0,.75), 0 1px 4px rgba(0,0,0,.5); }
 
-  /* Image slots — show label until a real image loads on top */
   .slot { position: relative; overflow: hidden; background:
       repeating-linear-gradient(45deg,#101218,#101218 12px,#0d0f14 12px,#0d0f14 24px);
       border: 1px solid rgba(255,255,255,.08); }
@@ -49,11 +45,9 @@ tailwind.config = {
       letter-spacing: .18em; padding: 1rem; pointer-events: none; }
   .slot img { position: relative; width: 100%; height: 100%; object-fit: cover; display:block; }
 
-  /* Scroll reveal */
   .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s ease; }
   .reveal.in { opacity: 1; transform: none; }
 
-  /* Nav active */
   .navlink.active { color: #fff; }
   .navlink.active::after { width: 100%; }
   .navlink { position: relative; }
@@ -68,15 +62,14 @@ tailwind.config = {
 <header class="no-print fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-ink/70 border-b border-white/5">
   <div class="max-w-6xl mx-auto px-6 h-[72px] flex items-center justify-between">
     <a href="#hero" class="font-head font-extrabold tracking-tight text-sm">
-      <span class="text-winblue">1win</span> <span class="text-mute font-semibold">× Tug of War in the Sky</span>
+      <span class="text-winblue">1win</span> <span class="text-mute font-semibold">× Built for the Sky</span>
     </a>
-    <nav class="hidden md:flex gap-8 text-sm text-mute font-medium">
-      <a href="#concept" class="navlink hover:text-white transition">Concept</a>
+    <nav class="hidden md:flex gap-7 text-sm text-mute font-medium">
       <a href="#proof" class="navlink hover:text-white transition">Proof</a>
-      <a href="#numbers" class="navlink hover:text-white transition">Numbers</a>
-      <a href="#reach" class="navlink hover:text-white transition">Reach</a>
-      <a href="#team" class="navlink hover:text-white transition">Team</a>
-      <a href="#ask" class="navlink hover:text-white transition">The Ask</a>
+      <a href="#concepts" class="navlink hover:text-white transition">Concepts</a>
+      <a href="#branding" class="navlink hover:text-white transition">Branding</a>
+      <a href="#deliverables" class="navlink hover:text-white transition">Deliverables</a>
+      <a href="#budget" class="navlink hover:text-white transition">Budget</a>
     </nav>
   </div>
 </header>
@@ -90,42 +83,23 @@ tailwind.config = {
   <div class="relative max-w-6xl mx-auto px-6 w-full hero-copy">
     <p class="eyebrow uppercase text-winblue2 text-xs font-semibold mb-5">1win presents</p>
     <h1 class="font-head font-extrabold leading-[0.92] text-6xl sm:text-7xl md:text-8xl tracking-tight">
-      THE ULTIMATE<br>BET.
+      THREE WAYS<br>TO FLY.
     </h1>
-    <p class="mt-6 text-xl md:text-2xl text-white/90 font-semibold">Tug of War in the Sky.</p>
-    <p class="mt-1 text-lg md:text-xl text-mute">One team stays. One team falls.</p>
-    <p class="mt-8 text-sm text-mute max-w-md">A branded aerial stunt built for extreme — powered by 1win and a crew of creators with 2M+ combined reach.</p>
+    <p class="mt-6 text-xl md:text-2xl text-white/90 font-semibold">Branded stunts, suspended beneath a 1win hot air balloon.</p>
+    <p class="mt-1 text-lg md:text-xl text-mute">Thousands of feet up. One slip, and it's a freefall.</p>
+    <p class="mt-8 text-sm text-mute max-w-md">Three concepts, three budgets — monkey bars, a quarter pipe, and a tug of war. $10K, $20K, or $30K, each with guaranteed views.</p>
   </div>
   <div class="no-print absolute bottom-8 left-1/2 -translate-x-1/2 text-mute text-xs eyebrow uppercase animate-pulse">Scroll ↓</div>
 </section>
 
-<!-- 2 · THE CONCEPT -->
-<section id="concept" class="py-28 md:py-36">
-  <div class="max-w-6xl mx-auto px-6">
-    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">01 — The Concept</p>
-    <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight max-w-3xl reveal">A tug of war, 10,000 feet up.</h2>
-    <div class="grid md:grid-cols-2 gap-12 items-center mt-14">
-      <div class="reveal">
-        <p class="text-lg text-white/85 leading-relaxed">Two teams. Two steel platforms suspended beneath a single 1win hot air balloon. One rope stretched across an open drop zone.</p>
-        <p class="text-lg text-white/85 leading-relaxed mt-5">The team that loses their footing doesn't just lose the match — they fall out of the sky. Parachutes deploy. Confetti erupts. It's the most literal high-stakes game ever filmed.</p>
-        <p class="text-sm text-mute mt-6 border-l-2 border-winblue pl-4">Built for extreme. Powered by 1win.</p>
-      </div>
-      <div class="slot aspect-[4/5] rounded-xl reveal" data-label="CONCEPT — THE FULL RIG">
-        <img src="photos/concept.png" alt="Tug of War in the Sky concept" onerror="this.remove()">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 3 · RECENT PROJECTS (PROOF) -->
+<!-- 2 · PROOF OF CONCEPT -->
 <section id="proof" class="py-28 md:py-36 border-y border-white/5 bg-panel/40">
   <div class="max-w-6xl mx-auto px-6">
-    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">02 — Recent Projects</p>
+    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">01 — Proof of Concept</p>
     <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight max-w-3xl reveal">None of this is rendered.</h2>
-    <p class="mt-6 text-lg text-mute max-w-2xl reveal">It has been rigged, flown, and filmed by the same balloon pilot, drone pilot, and build team we would use for this project.</p>
+    <p class="mt-6 text-lg text-mute max-w-2xl reveal">Every rig below was built, flown, and filmed by the same balloon pilot, drone pilot, and crew we'd put on this project.</p>
 
     <div class="mt-14 space-y-8">
-      <!-- Ford -->
       <figure class="reveal">
         <div class="relative overflow-hidden rounded-xl border border-white/10 bg-ink aspect-[1278/608]">
           <video controls preload="none" playsinline poster="videos/ford-brazil-poster.jpg" src="videos/ford-brazil.mp4" class="absolute inset-0 h-full w-full object-cover"></video>
@@ -133,13 +107,12 @@ tailwind.config = {
         <figcaption class="mt-3 text-sm"><span class="text-white font-semibold">The Ford commercial.</span> <span class="text-mute">A pickup truck, suspended and flown thousands of feet above the clouds.</span></figcaption>
       </figure>
 
-      <!-- Stake + Boxing -->
       <div class="grid gap-6 sm:grid-cols-2 max-w-3xl mx-auto">
         <figure class="reveal">
           <div class="relative overflow-hidden rounded-xl border border-white/10 bg-ink aspect-[9/16]">
             <video controls preload="none" playsinline poster="videos/stake-balloon-poster.jpg" src="videos/stake-balloon.mp4" class="absolute inset-0 h-full w-full object-cover"></video>
           </div>
-          <figcaption class="mt-3 text-sm"><span class="text-white font-semibold">Stake, a match above the clouds.</span> <span class="text-mute">Ford is not the only brand that has trusted this crew in the air.</span></figcaption>
+          <figcaption class="mt-3 text-sm"><span class="text-white font-semibold">Stake, a match above the clouds.</span> <span class="text-mute">The 200M+ World Cup format — same crew, in the air.</span></figcaption>
         </figure>
         <figure class="reveal">
           <div class="relative overflow-hidden rounded-xl border border-white/10 bg-ink aspect-[9/16]">
@@ -149,7 +122,6 @@ tailwind.config = {
         </figure>
       </div>
 
-      <!-- Aviator -->
       <figure class="reveal">
         <div class="relative overflow-hidden rounded-xl border border-white/10 bg-ink aspect-video">
           <video controls preload="none" playsinline poster="videos/aviator-ontop-poster.jpg" src="videos/aviator-ontop.mp4" class="absolute inset-0 h-full w-full object-cover"></video>
@@ -160,11 +132,11 @@ tailwind.config = {
   </div>
 </section>
 
-<!-- 3b · THE LATEST ONE, BY THE NUMBERS -->
+<!-- 3 · BY THE NUMBERS -->
 <section id="numbers" class="py-28 md:py-36">
   <div class="max-w-6xl mx-auto px-6">
-    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">03 — The Latest One, By the Numbers</p>
-    <h2 class="font-head font-extrabold text-3xl md:text-5xl tracking-tight max-w-4xl leading-[1.08] reveal">Stake ran this exact format for the 2026 World Cup, a football pitch flown under a balloon, and the internet lost it.</h2>
+    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">02 — By the Numbers</p>
+    <h2 class="font-head font-extrabold text-3xl md:text-5xl tracking-tight max-w-4xl leading-[1.08] reveal">Stake ran this exact format for the 2026 World Cup — a football pitch flown under a balloon — and the internet lost it.</h2>
     <div class="grid gap-6 md:grid-cols-3 mt-14">
       <div class="rounded-2xl border border-white/10 bg-panel p-8 reveal">
         <div class="font-head font-extrabold text-5xl md:text-6xl text-winblue"><span class="count" data-to="200">0</span>M+</div>
@@ -183,155 +155,154 @@ tailwind.config = {
   </div>
 </section>
 
-<!-- 4 · THE MECHANIC -->
-<section id="mechanic" class="py-28 md:py-36">
+<!-- 4 · THE CONCEPTS -->
+<section id="concepts" class="py-28 md:py-36 border-y border-white/5 bg-panel/40">
   <div class="max-w-6xl mx-auto px-6">
-    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">04 — How It Works</p>
-    <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight reveal">Engineered for real. Built to go viral.</h2>
+    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">03 — The Concepts</p>
+    <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight reveal">Three stunts. One sky.</h2>
+    <p class="mt-5 text-mute max-w-2xl reveal">Each suspended beneath a 1win balloon. Pick the one that fits — they scale from a fast, no-brainer clip to a full multi-creator event.</p>
 
-    <div class="grid md:grid-cols-3 gap-6 mt-16">
-      <div class="reveal">
-        <div class="text-6xl font-head font-extrabold text-white/10">01</div>
-        <div class="font-head font-bold text-xl mt-2">The Rig</div>
-        <p class="text-mute mt-3">A single 1win balloon suspends two locked steel platforms on industrial cables. C-ring connectors hold them rigid for a fair pull.</p>
-      </div>
-      <div class="reveal">
-        <div class="text-6xl font-head font-extrabold text-white/10">02</div>
-        <div class="font-head font-bold text-xl mt-2">The Tug of War</div>
-        <p class="text-mute mt-3">Two teams of two. One rope. An open drop zone in the middle. The first team pulled off the edge loses.</p>
-      </div>
-      <div class="reveal">
-        <div class="text-6xl font-head font-extrabold text-winblue/30">03</div>
-        <div class="font-head font-bold text-xl mt-2">The Fall</div>
-        <p class="text-mute mt-3">The losers don't crash — they skydive. Chutes deploy, blue confetti erupts. Losing has never looked this good.</p>
-      </div>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-6 mt-14">
-      <div class="slot aspect-video rounded-xl reveal" data-label="FILMER — THE FIGHT ON THE PLATFORM">
-        <img src="photos/filmer.png" alt="" onerror="this.remove()">
-      </div>
-      <div class="slot aspect-video rounded-xl reveal" data-label="POV — THE FALL">
-        <img src="photos/pov.png" alt="" onerror="this.remove()">
-      </div>
-    </div>
-
-    <p class="mt-8 text-sm text-mute reveal border border-white/10 rounded-lg px-5 py-4 inline-block">
-      <span class="text-winblue font-semibold">Safety &amp; stunt engineered.</span>
-      The fall is a controlled, rehearsed skydive exit with certified rigging — executed by a crew that already lives in the air.
-    </p>
-  </div>
-</section>
-
-<!-- 5 · THE REACH -->
-<section id="reach" class="py-28 md:py-36 border-y border-white/5 bg-panel/40">
-  <div class="max-w-6xl mx-auto px-6">
-    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">05 — The Reach</p>
-    <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight max-w-3xl reveal">One stunt. Five feeds. Millions of eyes.</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
-      <div class="reveal">
-        <div class="font-head font-extrabold text-5xl md:text-6xl text-winblue"><span class="count" data-to="2">0</span>M+</div>
-        <div class="text-mute text-sm mt-2 uppercase eyebrow">Combined audience</div>
-      </div>
-      <div class="reveal">
-        <div class="font-head font-extrabold text-5xl md:text-6xl"><span class="count" data-to="4">0</span></div>
-        <div class="text-mute text-sm mt-2 uppercase eyebrow">Creators</div>
-      </div>
-      <div class="reveal">
-        <div class="font-head font-extrabold text-5xl md:text-6xl"><span class="count" data-to="5">0</span></div>
-        <div class="text-mute text-sm mt-2 uppercase eyebrow">Feeds at once</div>
-      </div>
-      <div class="reveal">
-        <div class="font-head font-extrabold text-5xl md:text-6xl"><span class="count" data-to="10">0</span>M+</div>
-        <div class="text-mute text-sm mt-2 uppercase eyebrow">Projected views</div>
-      </div>
-    </div>
-    <p class="mt-12 text-lg text-white/80 max-w-2xl reveal">Roughly <span class="text-white font-semibold">1.1M on Instagram</span> across the four of us, plus Noah's <span class="text-white font-semibold">984K on Facebook</span> — one production, distributed natively across every creator's audience the moment it drops, plus the organic and paid tail a stunt of this scale generates for weeks after.</p>
-  </div>
-</section>
-
-<!-- 6 · THE TEAM -->
-<section id="team" class="py-28 md:py-36">
-  <div class="max-w-6xl mx-auto px-6">
-    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">06 — The Team</p>
-    <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight reveal">Four creators. Two teams. One rope.</h2>
-    <p class="mt-5 text-mute max-w-2xl reveal">Noah is already a signed 1win creator — this is being brought to you from inside the family.</p>
-
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-14">
-      <!-- CREATOR 1 -->
-      <div class="reveal">
-        <div class="slot aspect-[3/4] rounded-xl" data-label="CALLIE"><img src="photos/callie.png" alt="" onerror="this.remove()"></div>
-        <div class="mt-4">
-          <div class="font-head font-bold">Callie Rounds</div>
-          <div class="text-mute text-sm">@callie.rounds · 408K</div>
-          <div class="text-winblue text-xs mt-1 eyebrow uppercase">Team A · Aerial stunts</div>
+    <div class="grid md:grid-cols-3 gap-6 mt-14">
+      <!-- Concept 1 -->
+      <div class="reveal flex flex-col">
+        <div class="slot aspect-[4/5] rounded-xl" data-label="MONKEY BARS — AI RENDER"><img src="photos/monkey-bars.png" alt="" onerror="this.remove()"></div>
+        <div class="mt-5">
+          <div class="text-winblue text-xs eyebrow uppercase">Concept 01</div>
+          <div class="font-head font-extrabold text-2xl mt-1">Monkey Bars in the Sky</div>
+          <p class="text-mute mt-3">A branded monkey-bar rig hung beneath the balloon. A creator swings bar to bar over the open drop — one slip and it's a freefall.</p>
+          <p class="text-white/70 text-sm mt-4">Shots: POV · drone · on-rig · cinematic.</p>
         </div>
       </div>
-      <!-- CREATOR 2 -->
-      <div class="reveal">
-        <div class="slot aspect-[3/4] rounded-xl" data-label="NOAH"><img src="photos/noah.png" alt="" onerror="this.remove()"></div>
-        <div class="mt-4">
-          <div class="font-head font-bold">Noah Lipsitz</div>
-          <div class="text-mute text-sm">@noahlipsitz · 220K IG · 984K FB</div>
-          <div class="text-winblue text-xs mt-1 eyebrow uppercase">Team A · Skydiver · 1win athlete</div>
+      <!-- Concept 2 -->
+      <div class="reveal flex flex-col">
+        <div class="slot aspect-[4/5] rounded-xl" data-label="QUARTER PIPE — AI RENDER"><img src="photos/quarter-pipe.png" alt="" onerror="this.remove()"></div>
+        <div class="mt-5">
+          <div class="text-winblue text-xs eyebrow uppercase">Concept 02</div>
+          <div class="font-head font-extrabold text-2xl mt-1">Quarter Pipe in the Sky</div>
+          <p class="text-mute mt-3">A quarter pipe suspended in open air. Two creators drop in on skateboards, ride the ramp, and launch off the platform into freefall.</p>
+          <p class="text-white/70 text-sm mt-4">Shots: POV · drone · ramp-cam · cinematic.</p>
         </div>
       </div>
-      <!-- CREATOR 3 -->
-      <div class="reveal">
-        <div class="slot aspect-[3/4] rounded-xl" data-label="GABRIELLE"><img src="photos/gabrielle.png" alt="" onerror="this.remove()"></div>
-        <div class="mt-4">
-          <div class="font-head font-bold">Gabrielli Diniz</div>
-          <div class="text-mute text-sm">@gabriellidinizz · 372K</div>
-          <div class="text-winblue text-xs mt-1 eyebrow uppercase">Team B · Extreme creator</div>
-        </div>
-      </div>
-      <!-- CREATOR 4 -->
-      <div class="reveal">
-        <div class="slot aspect-[3/4] rounded-xl" data-label="KYLE"><img src="photos/kyle.png" alt="" onerror="this.remove()"></div>
-        <div class="mt-4">
-          <div class="font-head font-bold">Kyle Zellner</div>
-          <div class="text-mute text-sm">@kyle.zellner · 91K</div>
-          <div class="text-winblue text-xs mt-1 eyebrow uppercase">Team B · Extreme sports</div>
+      <!-- Concept 3 -->
+      <div class="reveal flex flex-col">
+        <div class="slot aspect-[4/5] rounded-xl" data-label="TUG OF WAR — AI RENDER"><img src="photos/concept.png" alt="" onerror="this.remove()"></div>
+        <div class="mt-5">
+          <div class="text-winblue text-xs eyebrow uppercase">Concept 03</div>
+          <div class="font-head font-extrabold text-2xl mt-1">Tug of War in the Sky</div>
+          <p class="text-mute mt-3">Two teams of three on suspended platforms pull for the win. The losing team gets dragged into the open center — and falls into freefall.</p>
+          <p class="text-white/70 text-sm mt-4">Shots: POV · drone · on-platform · cinematic.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 7 · THE SHOTS -->
-<section id="shots" class="py-28 md:py-36 border-y border-white/5 bg-panel/40">
+<!-- 5 · BRANDING -->
+<section id="branding" class="py-28 md:py-36">
   <div class="max-w-6xl mx-auto px-6">
-    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">07 — The Content</p>
-    <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight reveal">Every angle. Every platform.</h2>
-    <div class="grid md:grid-cols-2 gap-6 mt-14">
-      <figure class="reveal">
-        <div class="slot aspect-video rounded-xl" data-label="POV — HELMET CAM"><img src="photos/pov.png" alt="" onerror="this.remove()"></div>
-        <figcaption class="mt-3 text-sm"><span class="text-white font-semibold">POV.</span> <span class="text-mute">Helmet-cam free fall — the clip that goes viral.</span></figcaption>
-      </figure>
-      <figure class="reveal">
-        <div class="slot aspect-video rounded-xl" data-label="DRONE — THE SCALE"><img src="photos/drone.png" alt="" onerror="this.remove()"></div>
-        <figcaption class="mt-3 text-sm"><span class="text-white font-semibold">Drone.</span> <span class="text-mute">The full rig against the sky — the establishing shot.</span></figcaption>
-      </figure>
-      <figure class="reveal">
-        <div class="slot aspect-video rounded-xl" data-label="FILMER — ON PLATFORM"><img src="photos/filmer.png" alt="" onerror="this.remove()"></div>
-        <figcaption class="mt-3 text-sm"><span class="text-white font-semibold">Filmer.</span> <span class="text-mute">On-platform, in the action — the tension.</span></figcaption>
-      </figure>
-      <figure class="reveal">
-        <div class="slot aspect-video rounded-xl" data-label="CINEMATIC — BRAND FILM"><img src="photos/cinematic.png" alt="" onerror="this.remove()"></div>
-        <figcaption class="mt-3 text-sm"><span class="text-white font-semibold">Cinematic.</span> <span class="text-mute">Branded hero film for 1win's own channels.</span></figcaption>
-      </figure>
+    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">04 — Branding</p>
+    <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight reveal">Unmistakably 1win.</h2>
+    <p class="mt-5 text-mute max-w-2xl reveal">Every balloon flies a 1win banner, and every creator is branded 1win. On top of that, each rig carries its own placement:</p>
+
+    <div class="grid md:grid-cols-3 gap-6 mt-14">
+      <div class="reveal border-t border-white/10 pt-5">
+        <div class="text-winblue text-xs eyebrow uppercase">Concept 01</div>
+        <div class="font-head font-bold text-lg mt-1">Monkey Bars</div>
+        <p class="text-mute mt-3">A 1win flag flown above the bars, plus the logo running down the sides of the rig.</p>
+      </div>
+      <div class="reveal border-t border-white/10 pt-5">
+        <div class="text-winblue text-xs eyebrow uppercase">Concept 02</div>
+        <div class="font-head font-bold text-lg mt-1">Quarter Pipe</div>
+        <p class="text-mute mt-3">1win on the side of the ramp, and across the ramp face the skaters ride down.</p>
+      </div>
+      <div class="reveal border-t border-white/10 pt-5">
+        <div class="text-winblue text-xs eyebrow uppercase">Concept 03</div>
+        <div class="font-head font-bold text-lg mt-1">Tug of War</div>
+        <p class="text-mute mt-3">1win across the top and down the sides of both platforms.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- 8 · THE ASK -->
-<section id="ask" class="py-28 md:py-40">
+<!-- 6 · DELIVERABLES -->
+<section id="deliverables" class="py-28 md:py-36 border-y border-white/5 bg-panel/40">
   <div class="max-w-6xl mx-auto px-6">
-    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">08 — The Ask</p>
-    <h2 class="font-head font-extrabold text-4xl md:text-7xl tracking-tight reveal">Let's build the one<br>they can't stop watching.</h2>
-    <p class="mt-6 text-lg text-mute max-w-2xl reveal">One flagship stunt, filmed from every angle and pushed across a 2M+ combined audience — the most talked-about branded moment of the year, powered by 1win.</p>
+    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">05 — Deliverables</p>
+    <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight reveal">What you're guaranteed.</h2>
 
-    <div class="mt-16 border-t border-white/10 pt-10 reveal">
+    <div class="grid md:grid-cols-3 gap-6 mt-14">
+      <!-- Deliverable 1 -->
+      <div class="reveal rounded-2xl border border-white/10 bg-ink p-7 flex flex-col">
+        <div class="text-winblue text-xs eyebrow uppercase">Concept 01</div>
+        <div class="font-head font-bold text-xl mt-1">Monkey Bars</div>
+        <ul class="mt-5 space-y-3 text-sm text-white/85 flex-1">
+          <li class="flex gap-2"><span class="text-winblue">→</span> 1× Reel on your profile, collab'd with 1win</li>
+          <li class="flex gap-2"><span class="text-winblue">→</span> 1× Reel on the 1win Extreme profile, collab'd</li>
+        </ul>
+        <div class="mt-6 pt-5 border-t border-white/10">
+          <div class="font-head font-extrabold text-3xl text-winblue">2.5M</div>
+          <div class="text-mute text-xs uppercase eyebrow mt-1">Guaranteed views · $4.00 CPM</div>
+        </div>
+      </div>
+      <!-- Deliverable 2 -->
+      <div class="reveal rounded-2xl border border-white/10 bg-ink p-7 flex flex-col">
+        <div class="text-winblue text-xs eyebrow uppercase">Concept 02</div>
+        <div class="font-head font-bold text-xl mt-1">Quarter Pipe</div>
+        <ul class="mt-5 space-y-3 text-sm text-white/85 flex-1">
+          <li class="flex gap-2"><span class="text-winblue">→</span> 2× Reels on your profile, collab'd with 1win</li>
+          <li class="flex gap-2"><span class="text-winblue">→</span> 1× Reel on another 1win athlete's page, collab'd</li>
+        </ul>
+        <div class="mt-6 pt-5 border-t border-white/10">
+          <div class="font-head font-extrabold text-3xl text-winblue">6M</div>
+          <div class="text-mute text-xs uppercase eyebrow mt-1">Guaranteed views · $3.33 CPM</div>
+        </div>
+      </div>
+      <!-- Deliverable 3 -->
+      <div class="reveal rounded-2xl border border-winblue/40 bg-winblue/5 p-7 flex flex-col">
+        <div class="text-winblue text-xs eyebrow uppercase">Concept 03</div>
+        <div class="font-head font-bold text-xl mt-1">Tug of War</div>
+        <ul class="mt-5 space-y-3 text-sm text-white/85 flex-1">
+          <li class="flex gap-2"><span class="text-winblue">→</span> 3× Reels on your page, collab'd with 1win</li>
+          <li class="flex gap-2"><span class="text-winblue">→</span> 6 creators across two teams</li>
+        </ul>
+        <div class="mt-6 pt-5 border-t border-white/10">
+          <div class="font-head font-extrabold text-3xl text-winblue">10M</div>
+          <div class="text-mute text-xs uppercase eyebrow mt-1">Guaranteed views · $3.00 CPM</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · BUDGET -->
+<section id="budget" class="py-28 md:py-40">
+  <div class="max-w-6xl mx-auto px-6">
+    <p class="eyebrow uppercase text-winblue text-xs font-bold mb-4 reveal">06 — Budget</p>
+    <h2 class="font-head font-extrabold text-4xl md:text-6xl tracking-tight reveal">Pick your altitude.</h2>
+
+    <div class="grid md:grid-cols-3 gap-6 mt-14">
+      <div class="reveal rounded-2xl border border-white/10 p-8 text-center">
+        <div class="font-head font-bold text-lg">Monkey Bars</div>
+        <div class="font-head font-extrabold text-5xl md:text-6xl text-winblue mt-4">$10K</div>
+        <div class="text-mute text-sm mt-3">2.5M guaranteed views</div>
+      </div>
+      <div class="reveal rounded-2xl border border-white/10 p-8 text-center">
+        <div class="font-head font-bold text-lg">Quarter Pipe</div>
+        <div class="font-head font-extrabold text-5xl md:text-6xl text-winblue mt-4">$20K</div>
+        <div class="text-mute text-sm mt-3">6M guaranteed views</div>
+      </div>
+      <div class="reveal rounded-2xl border border-winblue/40 bg-winblue/5 p-8 text-center">
+        <div class="font-head font-bold text-lg">Tug of War</div>
+        <div class="font-head font-extrabold text-5xl md:text-6xl text-winblue mt-4">$30K</div>
+        <div class="text-mute text-sm mt-3">10M guaranteed views</div>
+      </div>
+    </div>
+
+    <div class="mt-14 max-w-3xl reveal">
+      <p class="text-lg text-white/85">I can fully source every creator for the project. Potential crew: <span class="text-white font-semibold">Kyle, Noah, Gabi, Callie</span> — and if you want specific people, I'm happy to connect with and coordinate them.</p>
+    </div>
+
+    <div class="mt-20 border-t border-white/10 pt-10 reveal">
       <p class="font-head font-extrabold text-2xl">Let's talk.</p>
       <p class="text-mute mt-2">Kyle Zellner · <a href="mailto:kylezellnerkz@gmail.com" class="text-winblue hover:underline">kylezellnerkz@gmail.com</a></p>
       <p class="text-mute mt-10 text-sm eyebrow uppercase">Built for extreme. Powered by <span class="text-winblue">1win</span>.</p>
