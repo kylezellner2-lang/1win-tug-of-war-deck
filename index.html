@@ -43,7 +43,7 @@ tailwind.config = {
       display: flex; align-items: center; justify-content: center; text-align:center;
       color: #5c6472; font-family: 'Sora',sans-serif; font-weight:700; font-size: .8rem;
       letter-spacing: .18em; padding: 1rem; pointer-events: none; }
-  .slot img { position: relative; width: 100%; height: 100%; object-fit: cover; display:block; }
+  .slot img { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: cover; display:block; }
 
   .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s ease; }
   .reveal.in { opacity: 1; transform: none; }
@@ -212,10 +212,15 @@ tailwind.config = {
           <div class="text-winblue text-xs eyebrow uppercase">Concept 01</div>
           <h3 class="font-head font-extrabold text-2xl mt-1">Monkey Bars</h3>
         </div>
-        <div class="mt-6 space-y-4">
-          <div class="slot aspect-[3/2] rounded-lg" data-label="MONKEY BARS — LOW ANGLE"><img src="photos/brand-monkey-2.png" alt="" onerror="this.remove()"></div>
-          <div class="slot aspect-[3/2] rounded-lg" data-label="MONKEY BARS — DRONE"><img src="photos/brand-monkey-3.png" alt="" onerror="this.remove()"></div>
+        <div class="mt-6">
+          <div class="slot aspect-[3/2] rounded-lg" data-label="MONKEY BARS"><img src="photos/brand-monkey-2.png" alt="" onerror="this.remove()"></div>
         </div>
+        <ul class="mt-5 space-y-1.5 text-sm text-mute">
+          <li>Flag above the bars</li>
+          <li>Branded balloon</li>
+          <li>Logo down the rig sides</li>
+          <li>Creators in 1win merch</li>
+        </ul>
       </div>
       <!-- Quarter Pipe -->
       <div class="reveal">
@@ -224,8 +229,14 @@ tailwind.config = {
           <h3 class="font-head font-extrabold text-2xl mt-1">Quarter Pipe</h3>
         </div>
         <div class="mt-6">
-          <div class="slot aspect-[3/2] rounded-lg" data-label="QUARTER PIPE — POV"><img src="photos/brand-quarter.png" alt="" onerror="this.remove()"></div>
+          <div class="slot aspect-[3/2] rounded-lg" data-label="QUARTER PIPE"><img src="photos/brand-quarter.png" alt="" onerror="this.remove()"></div>
         </div>
+        <ul class="mt-5 space-y-1.5 text-sm text-mute">
+          <li>Front, side &amp; back of the ramp</li>
+          <li>The ramp face they skate down</li>
+          <li>Branded balloon</li>
+          <li>Creators in 1win merch</li>
+        </ul>
       </div>
       <!-- Tug of War -->
       <div class="reveal">
@@ -234,8 +245,14 @@ tailwind.config = {
           <h3 class="font-head font-extrabold text-2xl mt-1">Tug of War</h3>
         </div>
         <div class="mt-6">
-          <div class="slot aspect-[3/2] rounded-lg" data-label="TUG OF WAR — SIDE"><img src="photos/brand-tug.png" alt="" onerror="this.remove()"></div>
+          <div class="slot aspect-[3/2] rounded-lg" data-label="TUG OF WAR"><img src="photos/brand-tug.png" alt="" onerror="this.remove()"></div>
         </div>
+        <ul class="mt-5 space-y-1.5 text-sm text-mute">
+          <li>Platform top &amp; sides</li>
+          <li>Platform base (standing surface)</li>
+          <li>Branded balloon</li>
+          <li>All 6 creators in 1win merch</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -345,7 +362,7 @@ tailwind.config = {
         </div>
       </div>
       <div class="reveal rounded-2xl border border-winblue/40 bg-winblue/5 overflow-hidden">
-        <div class="slot aspect-[4/3]" data-label="TUG OF WAR — AI RENDER"><img src="photos/concept.png" alt="" onerror="this.remove()"></div>
+        <div class="slot aspect-[4/3]" data-label="TUG OF WAR — AI RENDER"><img src="photos/hero.png" alt="" onerror="this.remove()"></div>
         <div class="p-8 text-center">
           <div class="font-head font-bold text-lg">Tug of War</div>
           <div class="font-head font-extrabold text-5xl md:text-6xl text-winblue mt-4">$30K</div>
